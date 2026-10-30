@@ -1,9 +1,19 @@
-﻿namespace EX2;
+﻿using System;
+
+enum BankAccountType
+{
+    Current,
+    Savings
+}
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Упражнение 3.1. Виды банковского счёта");
+
+        BankAccountType type = BankAccountType.Current;
+
+        Console.WriteLine($"Тип счёта: {type}");
     }
 }
